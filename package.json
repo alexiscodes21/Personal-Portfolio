@@ -1,0 +1,24 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Alexis Winters",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexiscodes21/Personal-Portfolio.git"
+  },
+  "author": "Alexis Winters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexiscodes21/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/alexiscodes21/Personal-Portfolio#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
