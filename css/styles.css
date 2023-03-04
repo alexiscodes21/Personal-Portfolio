@@ -23,8 +23,12 @@ h1 {
   font-size: 75px;
 }
 
-p {
+h4 {
   color: #8200ff;
+}
+
+p {
+  color: #06cdff;
   font-size: 25px;
   font-weight: bold;
 }
@@ -53,4 +57,14 @@ p {
 
 .github {
   background-color: white;
+}
+
+.card {
+  width: 40%;
+  padding: 1px;
+  margin: 10px;
+}
+
+.projects {
+  padding-bottom: 10px;
 }
