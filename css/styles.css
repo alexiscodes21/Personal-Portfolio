@@ -18,23 +18,27 @@ body {
   color: #8200ff;
 }
 
-h1 {  /*Hello, I'm Alexis*/
+h1 {
+  /*Hello, I'm Alexis*/
   color: #8200ff;
   font-size: 75px;
 }
 
-p { /* about me* and project description*/
+p {
+  /* about me* and project description*/
   color: #06cdff;
   font-size: 25px;
 }
 
-h2 { /* want to work together */
+h2 {
+  /* want to work together */
   color: #06cdff;
   font-size: 35px;
   padding-bottom: 20px;
 }
 
-h3 { /* projet name */
+h3 {
+  /* projet name */
   color: #06cdff;
   text-decoration: underline;
 }
@@ -66,21 +70,37 @@ h3 { /* projet name */
   background-color: white;
 }
 
-.card {
-  background-color: #470c85;
-  transition: all 500ms ease;
-  width: 40%;
-  padding: 1px;
-  margin: 20px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
-.card:hover {
-  transform: scale(1.1, 1.1);
-  border: 5px solid #8200ff;
+@media screen 
+and (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media screen 
+and (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+}
+
+.card {
+  background-color: #470c85;
+  padding: 1px;
 }
 
 .projects {
-  padding-bottom: 10px;
+  transition: all 500ms ease;
+}
+.projects:hover {
+  transform: scale(1.1, 1.1);
+  border: 2px solid #8200ff;
 }
 
 .contactMe {
@@ -95,24 +115,26 @@ h3 { /* projet name */
   background-color: #06cdff;
   border: none;
   border-radius: 10px;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: none;
   padding: 5px;
 }
 
 .sayHelloButton:hover {
-  transform: scale(1.3, 1.3);
   color: #06cdff;
   background-color: #8200ff;
 }
 
 .socials {
-  background-color: white;
+  background: linear-gradient(to bottom right, #06cdff, 40%, #8200ff, #470c85);
   border-radius: 10px;
   margin: 20px;
-  padding: 5px;
 }
 
 .socialLink {
-  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  opacity: .75;
 }
