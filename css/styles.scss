@@ -105,6 +105,7 @@ and (max-width: 600px) {
 .projects {
   transition: all 500ms ease;
 }
+
 .projects:hover {
   transform: scale(1.1, 1.1);
   border: 2px solid $color-bright-purple;
