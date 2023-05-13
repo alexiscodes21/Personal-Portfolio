@@ -2,6 +2,7 @@ $color-dark-blue: #18134c;
 $color-dark-purple: #470c85;
 $color-bright-purple: #8200ff;
 $color-baby-blue: #06cdff;
+$color-white: #ffffff;
 
 $body-font: "Bradley Hand", cursive;
 
@@ -74,7 +75,7 @@ h3 {
 }
 
 .github1 {
-  background-color: white;
+  background-color: $color-white;
 }
 
 .cards {
@@ -83,15 +84,13 @@ h3 {
   gap: 20px;
 }
 
-@media screen 
-and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .cards {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 }
 
-@media screen 
-and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .cards {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
@@ -100,15 +99,35 @@ and (max-width: 600px) {
 .card {
   background-color: $color-dark-purple;
   padding: 1px;
+  border-radius: 15px;
 }
 
 .projects {
   transition: all 500ms ease;
+  height: 175px;
+  border-radius: 15px;
 }
 
 .projects:hover {
   transform: scale(1.1, 1.1);
   border: 2px solid $color-bright-purple;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.descriptionLogo {
+  width: 15px;
+}
+
+.githubcode {
+  transition: all 500ms ease;
+  color: $color-white;
+}
+
+.githubcode:hover {
+  color: $color-baby-blue;
 }
 
 .contactMe {
@@ -144,5 +163,5 @@ and (max-width: 600px) {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  opacity: .75;
+  opacity: 0.75;
 }
