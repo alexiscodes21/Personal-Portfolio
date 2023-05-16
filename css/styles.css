@@ -1,5 +1,6 @@
 body {
-  background-color: #18134c;
+  /* background-color: #18134c; */
+  background-color: #000000;
   font-family: "Bradley Hand", cursive;
 }
 
@@ -53,17 +54,27 @@ h3 {
   filter: grayscale(100%);
 }
 
+.allTools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
 .tools {
-  padding: 20px;
+  padding: 10px;
 }
 
 .logos {
   transition: all 500ms ease;
   width: 75px;
+  border: 2px solid #06cdff;
+  border-radius: 45px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
 }
 
 .logos:hover {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.2, 1.2);
 }
 
 .github1 {
@@ -129,7 +140,7 @@ h3 {
 }
 
 .sayHelloButton {
-  transition: all 500ms ease;
+  transition: all 600ms ease;
   color: #8200ff;
   background-color: #06cdff;
   border: none;
@@ -144,16 +155,30 @@ h3 {
   background-color: #8200ff;
 }
 
-.socials {
+.site-footer {
   background: linear-gradient(to bottom right, #06cdff, 40%, #8200ff, #470c85);
-  border-radius: 10px;
-  margin: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 10px 40px;
+  width: 70%;
+  display: table;
+}
+
+.container-socials {
+  display: inline-flex;
+  width: 90%;
 }
 
 .socialLink {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
   opacity: 0.75;
+}
+
+.socialLogos {
+  transition: all 500ms ease;
+  width: 175px;
+  padding: 0 5px;
+}
+
+.socialLogos:hover {
+  transform: scale(1.2, 1.2);
 }
