@@ -45,7 +45,7 @@ h3 {
 }
 
 .row-content {
-  padding: 35px 70px;
+  padding: 35px 60px;
 }
 
 .alexis {
@@ -59,19 +59,13 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-.tools {
+.logos {
+  transition: all 500ms ease;
+  width: 100px;
+  height: 100px;
   padding: 10px;
 }
 
-.logos {
-  transition: all 500ms ease;
-  width: 75px;
-  border: 2px solid #06cdff;
-  border-radius: 45px;
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-}
 
 .logos:hover {
   transform: scale(1.2, 1.2);
@@ -79,6 +73,7 @@ h3 {
 
 .github1 {
   background-color: white;
+  border-radius: 50px;
 }
 
 .cards {
