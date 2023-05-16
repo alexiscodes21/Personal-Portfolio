@@ -3,11 +3,12 @@ $color-dark-purple: #470c85;
 $color-bright-purple: #8200ff;
 $color-baby-blue: #06cdff;
 $color-white: #ffffff;
+$color-black: #000000;
 
 $body-font: "Bradley Hand", cursive;
 
 body {
-  background-color: $color-dark-blue;
+  background-color: $color-black;
   font-family: $body-font;
 }
 
@@ -52,7 +53,7 @@ h3 {
 }
 
 .row-content {
-  padding: 35px 70px;
+  padding: 35px 60px;
 }
 
 .alexis {
@@ -61,21 +62,25 @@ h3 {
   filter: grayscale(100%);
 }
 
-.tools {
-  padding: 20px;
+.allTools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .logos {
   transition: all 500ms ease;
-  width: 75px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
 }
 
 .logos:hover {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.2, 1.2);
 }
 
 .github1 {
   background-color: $color-white;
+  border-radius: 50px;
 }
 
 .cards {
@@ -136,14 +141,26 @@ h3 {
   padding: 30px;
 }
 
+form {
+  border: 5px solid $color-dark-purple;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.col-form-label {
+  color: #06cdff;
+  font-size: 25px;
+}
+
 .sayHelloButton {
   transition: all 500ms ease;
   color: $color-bright-purple;
   background-color: $color-baby-blue;
   border: none;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
+  margin-top: 15px;
   padding: 5px;
 }
 
@@ -152,16 +169,30 @@ h3 {
   background-color: $color-bright-purple;
 }
 
-.socials {
+.site-footer {
   background: linear-gradient(to bottom right, $color-baby-blue, 40%, $color-bright-purple, $color-dark-purple);
-  border-radius: 10px;
-  margin: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 10px 40px;
+  width: 70%;
+  display: table;
+}
+
+.container-socials {
+  display: inline-flex;
+  width: 90%;
 }
 
 .socialLink {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
   opacity: 0.75;
+}
+
+.socialLogos {
+  transition: all 500ms ease;
+  width: 175px;
+  padding: 0 5px;
+}
+
+.socialLogos:hover {
+  transform: scale(1.2, 1.2);
 }

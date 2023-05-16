@@ -34,7 +34,7 @@
     </div>
 
     <!-- About Me section -->
-   <div class="row row-content">
+    <div class="row row-content">
       <div class="col">
         <h1 class="text-center mt-lg-4 mb-sm-0">Hello, I'm Alexis</h1>
       </div>
@@ -43,7 +43,7 @@
     <div class="container text-center">
       <div class="row row-content align-items-center">
         <div class="col-md-6">
-          <p class="text-center mt-4 ">
+          <p class="text-center mt-4">
             ...and I'm glad you're here. I'm a full stack developer in the making. I started off by self teaching and then I decided to enroll in a
             coding bootcamp. I am currently enrolled in the Full Stack Web and Mobile Development bootcamp with Nucamp Coding Bootcamp.
           </p>
@@ -186,14 +186,38 @@
     <div class="container" id="contactSection">
       <div class="row row-content">
         <div class="col">
-          <h1 class="text-center text-nowrap mt-1 mb-1">Contact Me</h1>
+          <h1 class="text-center text-nowrap">Contact Me</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col contactMe text-center">
-          <h2 class="text-center">Want to work together or just say hi?</h2>
-          <a role="button" class="sayHelloButton" href="mailto:alexiscodes@yahoo.com">Say Hello</a>
-        </div>
+      <div class="row row-content">
+        <form action="mailto:alexiswinters923@gmail.com" method="POST" enctype="text/plain">
+          <div>
+            <h2 class="text-center">Want to work together or just say hi?</h2>
+          </div>
+          <div class="form-group row">
+            <label for="name" class="col-md-2 col-form-label">Name</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-md-2 col-form-label">Email</label>
+            <div class="col-md-10">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="feedback" class="col-md-2 col-form-label">Message</label>
+            <div class="col-md-10">
+              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Hi Alexis..."></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-md-2 col-md-10">
+              <input type="submit" class="sayHelloButton" value="Say Hello" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -219,6 +243,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
