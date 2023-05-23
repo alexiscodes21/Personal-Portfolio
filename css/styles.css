@@ -177,14 +177,14 @@ span {
 
 .skills-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
 }
 
 .logos {
   transition: all 500ms ease;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
+  width: 7rem;
+  height: 7rem;
+  padding: 0.5rem;
 }
 
 .logos:hover {
@@ -193,17 +193,17 @@ span {
 
 .github {
   background-color: var(--white-color);
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .projectsSection h2 {
   margin-bottom: 4rem;
 }
 
-.projectCards{
+.projectCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -220,33 +220,33 @@ span {
 
 .card {
   background-color: var(--darkpurple-color);
-  padding: 1px;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .card-body {
   text-align: center;
+  padding: 0.8rem;
 }
 
 .projects {
   transition: all 500ms ease;
-  height: 175px;
+  height: 12rem;
   border-radius: 1rem;
   width: 100%;
 }
 
 .projects:hover {
   transform: scale(1.1, 1.1);
-  border: 2px solid var(--blue-color);
+  border: 0.3rem solid var(--blue-color);
 }
 
 .descriptionLogo {
-  width: 15px;
+  width: 1.2rem;
 }
 
 .githubcode {
   transition: all 500ms ease;
-  color: white;
+  color: var(--white-color);
 }
 
 .githubcode:hover {
@@ -281,8 +281,8 @@ span {
   font-size: 1.6rem;
   color: var(--white-color);
   background-color: var(--darkgray-color);
-  border-radius: .8rem;
-  margin: .7rem 0;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
 }
 
 .contactSection form textarea {
@@ -294,64 +294,3 @@ span {
   cursor: pointer;
 }
 
-/* .contactMe {
-  border: 5px solid #470c85;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-form {
-  border: 5px solid #470c85;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.col-form-label {
-  color: #06cdff;
-  font-size: 25px;
-}
-
-.sayHelloButton {
-  transition: all 600ms ease;
-  color: #8200ff;
-  background-color: #06cdff;
-  border: none;
-  border-radius: 10px;
-  font-size: 25px;
-  text-decoration: none;
-  margin-top: 15px;
-  padding: 5px;
-}
-
-.sayHelloButton:hover {
-  color: #06cdff;
-  background-color: #8200ff;
-}
-
-.site-footer {
-  background: linear-gradient(to bottom right, #06cdff, 40%, #8200ff, #470c85);
-  border-radius: 20px;
-  margin: 30px auto;
-  padding: 10px 40px;
-  width: 70%;
-  display: table;
-}
-
-.container-socials {
-  display: inline-flex;
-  width: 90%;
-}
-
-.socialLink {
-  opacity: 0.75;
-}
-
-.socialLogos {
-  transition: all 500ms ease;
-  width: 175px;
-  padding: 0 5px;
-}
-
-.socialLogos:hover {
-  transform: scale(1.2, 1.2);
-} */
