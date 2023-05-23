@@ -6,53 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
 
     <title>👩🏽‍💻 Alexis Winters</title>
   </head>
+
   <body>
     <!-- navigation section -->
-    <div class="container">
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skillsSection">Tools</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projectSection">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contactSection">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <header class="header">
+      <a class="myLogo" href="#">Alexis Winters</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#skillsSection">Skills</a>
+        <a href="#projectSection">Projects</a>
+        <a href="#contactSection">Contact</a>
+      </nav>
+    </header>
 
-    <!-- About Me section -->
-    <div class="row row-content">
-      <div class="col">
-        <h1 class="text-center mt-lg-4 mb-sm-0">Hello, I'm Alexis</h1>
-      </div>
-    </div>
-
-    <div class="container text-center">
-      <div class="row row-content align-items-center">
-        <div class="col-md-6">
-          <p class="text-center mt-4">
-            ...and I'm glad you're here. I'm a full stack developer in the making. I started off by self teaching and then I decided to enroll in a
-            coding bootcamp. I am currently enrolled in the Full Stack Web and Mobile Development bootcamp with Nucamp Coding Bootcamp.
-          </p>
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Alexis.</h1>
+        <h3>I'm a <span>Full Stack Developer</span></h3>
+        <p>
+          ...and I'm glad you're here. I started off by self teaching and then I decided to enroll in a
+          coding bootcamp. I am currently enrolled in the Full Stack Web and Mobile Development bootcamp with Nucamp Coding Bootcamp.
+        </p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/alexis-winters/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/alexisnicole.dev/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://github.com/alexiscodes21/" target="_blank"><i class="fa fa-github"></i></a>
         </div>
-        <div class="col-md-6 order-first order-md-last">
-          <img class="alexis" src="img/photo4.jpeg" alt="Photo of Alexis" />
-        </div>
+        <a href="#" class="btn">Download Resume</a>
       </div>
-    </div>
+      <div class="home-img">
+        <img class="alexis" src="img/photo4.jpeg" alt="Photo of Alexis" />
+      </div>
+    </section>
 
     <!-- skills section -->
     <div class="container" id="skillsSection">
@@ -76,7 +70,7 @@
               <a href="https://tailwindcss.com/" target="_blank"><img class="logos" src="img/tailwind-css.svg" alt="Tailwind CSS logo" /></a>
             </div>
             <div class="tools">
-              <a href="https://github.com" target="_blank"><img class="logos github1" src="img/github1.svg" alt="Github logo" /></a>
+              <a href="https://github.com" target="_blank"><img class="logos github1" src="img/github.svg" alt="Github logo" /></a>
             </div>
             <div class="tools">
               <a href="https://www.w3schools.com/js/default.asp" target="_blank"
@@ -223,7 +217,7 @@
 
     <!-- footer -->
     <footer class="site-footer text-center">
-      <div class="container-socials justify-content-center">
+      <!-- <div class="container-socials justify-content-center">
         <div class="row">
           <div class="social col-sm-4">
             <a href="https://www.linkedin.com/in/alexis-winters/" target="_blank"
@@ -241,7 +235,7 @@
             /></a>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
   </body>
 </html>
