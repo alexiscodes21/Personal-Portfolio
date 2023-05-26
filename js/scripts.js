@@ -34,25 +34,43 @@ window.addEventListener("load", function () {
   }
 });
 
-// Scroll sections active link 
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("nav a");
+// Scroll sections active link
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
 
-window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
+// window.onscroll = () => {
+//   sections.forEach((sec) => {
+//     const top = window.scrollY;
+//     const offset = sec.offsetTop - 150;
+//     const height = sec.offsetHeight;
+//     const id = sec.getAttribute("id");
+
+//     if (top >= offset && top < offset + height) {
+//       navLinks.forEach((links) => {
+//         links.classList.remove("active");
+//         document.querySelector("nav a[href*=" + id + "]").classList.add("active");
+//       });
+//     }
+//   });
+// };
+
+function handleScroll() {
+  sections.forEach(function (sec) {
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 150;
+    const height = sec.offsetHeight;
+    const id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navLinks.forEach((links) => {
+      navLinks.forEach(function (links) {
         links.classList.remove("active");
         document.querySelector("nav a[href*=" + id + "]").classList.add("active");
       });
     }
   });
-};
+}
+
+window.onscroll = handleScroll();
 
 // Scroll reveal
 ScrollReveal({
