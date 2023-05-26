@@ -37,8 +37,6 @@ section {
 }
 
 .navbar {
-  background-color: var(--black-color);
-  color: var(--black-color);
   position: sticky;
   position: sticky;
   top: 0;
@@ -118,6 +116,10 @@ section {
   .navbar-logo {
     display: none;
   }
+}
+
+.alexiswinters {
+  width: 15rem;
 }
 
 .home {
