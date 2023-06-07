@@ -36,6 +36,15 @@ window.addEventListener("load", function () {
   }
 });
 
+// document.getElementById("form").addEventListener("submit", function (event) {
+//   emailSent();
+// });
+
+// function emailSent() {
+//   console.log("Email Sent!");
+//   alert("Your message has been sent! 👍🏽 I'll get back to you soon 😃");
+// }
+
 // EMAIL.JS
 // document.getElementById("form").addEventListener("submit", function (event) {
 //   event.preventDefault(); // Prevent form submission
