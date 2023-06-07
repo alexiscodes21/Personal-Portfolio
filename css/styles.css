@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  scroll-behavior: smooth;
-  font-family: "Bradley Hand", cursive;
-}
-
 :root {
   --gradient-color: linear-gradient(to bottom right, #06cdff, 30%, #8200ff, #470c85);
   --black-color: #000000;
@@ -17,6 +6,18 @@
   --darkpurple-color: #470c85;
   --purple-color: #8200ff;
   --blue-color: #06cdff;
+  --font-family: "Source Sans Pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
 }
 
 html {
@@ -153,6 +154,7 @@ span {
   font-size: 5.5rem;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--blue-color);
 }
 
 .home-img {
@@ -242,6 +244,11 @@ span {
   border-radius: 50%;
 }
 
+.express {
+  background-color: var(--white-color);
+  border-radius: 20%;
+}
+
 .projectsSection h2 {
   margin-bottom: 4rem;
 }
@@ -255,7 +262,7 @@ span {
 
 @media screen and (min-width: 1024px) {
   .projects-container {
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
   }
 }
 
@@ -348,4 +355,10 @@ span {
 .contactSection form .btn {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  color: var(--blue-color);
 }
