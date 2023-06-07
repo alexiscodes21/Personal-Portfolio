@@ -206,16 +206,14 @@
     <section class="contactSection" id="contactSection">
       <h2 class="sectionHeading">Contact <span>Me!</span></h2>
       <h3>Want to work together or just say hi?</h3>
-      <form id="form" action="https://formsubmit.co/alexiswinters923@gmail.com" method="POST">
-        <div class="input-box">
+      <form id="form" action="mailto:alexiscodes@yahoo.com" method="POST" enctype="text/plain">
+        <!-- <div class="input-box">
           <input type="text" id="name" name="name" placeholder="Name" required />
           <input type="email" id="email" name="email" placeholder="Email Address" required />
           <input type="text" id="subject" name="subject" placeholder="Subject" required />
-        </div>
+        </div> -->
         <textarea type="text" id="message" name="message" cols="30" rows="10" placeholder="Hi Alexis..." required></textarea>
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://alexiswinters.tech/thankyou.html" />
-        <input type="submit" value="Send Message" class="btn" name="_captcha" onsubmit="emailSent()" />
+        <input type="submit" value="Send Message" class="btn" />
       </form>
     </section>
 
