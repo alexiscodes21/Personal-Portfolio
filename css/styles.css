@@ -255,20 +255,19 @@ span {
 
 .projects-container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 
 @media screen and (min-width: 1024px) {
   .projects-container {
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (max-width: 600px) {
   .projects-container {
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -278,15 +277,9 @@ span {
 }
 
 .projects {
-  transition: all 500ms ease;
   height: 12rem;
   border-radius: 1rem;
   width: 100%;
-}
-
-.projects:hover {
-  transform: scale(1.1, 1.1);
-  border: 0.3rem solid var(--blue-color);
 }
 
 .card-body {
@@ -314,6 +307,26 @@ span {
 
 .githubcode:hover {
   color: var(--blue-color);
+}
+
+.project-links {
+  border: .2rem solid var(--blue-color);
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: .4rem;
+}
+
+.project-links:hover {
+
+}
+
+.project-links i {
+  color: var(--blue-color);
+  margin-left: 1rem;
+}
+
+.project-links h3 {
+  text-decoration: none;
 }
 
 .contactSection h3 {
