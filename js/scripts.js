@@ -34,6 +34,15 @@ window.addEventListener("load", function () {
   }
 });
 
+//  Setup and start animation
+const typed = new Typed("#typed-strings", {
+  strings: ["Full Stack Developer", "Front End Developer"],
+  typeSpeed: 75,
+  backSpeed: 75,
+  backDelay: 750,
+  loop: true
+});
+
 // email.js
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent form submission
