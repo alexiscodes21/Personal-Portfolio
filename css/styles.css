@@ -354,7 +354,7 @@ span {
 .contactSection form .input-box input,
 .contactSection form textarea {
   width: 100%;
-  padding: 1.5rem;
+  padding: .5rem;
   font-size: 1.6rem;
   background: var(--darkgray-color);
   border: 0.2rem solid var(--blue-color);
